@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playball&display=swap');
+
+/* HEADER */
+
+.bg-body-tertiary {
+  --bs-bg-opacity: 1;
+  background-color: rgba(196, 182, 181) !important;
+}
+
+.header2-styling {
+  background-color: rgba(196, 182, 181) !important;
+}
+
+.py-2 {
+  position: fixed;
+  width: 100%;
+  border-color: transparent;
+  box-shadow: 0 0 25px rgba(196, 182, 181);
+  padding-bottom: 0rem !important;
+  z-index: 2;
+}
+
+img,
+svg {
+  vertical-align: middle;
+  max-width: 155%;
+  height:auto;
+}
+
+.py-3 {
+  padding-top: 9rem !important;
+  padding-bottom: 0rem !important;
+}
+
+.mb-4 {
+  margin-bottom: 0rem !important;
+}
+.border-bottom {
+  border-bottom: 0 !important;
+}
+
+.btn-primary {
+  --bs-btn-bg: none;
+  --bs-btn-border-color: none;
+  --bs-btn-disabled-bg: none;
+  --bs-btn-disabled-border-color: none;
+  --bs-btn-hover-bg: rgba(196, 182, 181, 0.567) !important; /* ON HOVER */
+  --bs-btn-hover-border-color: rgba(
+    196,
+    182,
+    181,
+    0.567
+  ) !important; /* ON HOVER */
+  --bs-btn-active-bg: rgba(196, 182, 181, 0.567) !important; /* ACTIVE */
+  --bs-btn-active-border-color: rgba(
+    196,
+    182,
+    181,
+    0.567
+  ) !important; /* ACTIVE */
+  border-radius: 100px;
+}
+
+.nav-btn {
+  display: flex;
+  justify-content: center;
+  width: 50px;
+}
+
+.nav-btn:hover {
+  background-color: rosybrown;
+  /* transform: rotate(45deg); */
+}
+
+.filter-wrapper {
+  display: flex;
+  padding: 10px;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+
+.filter-wrapper:hover {
+  background-color: rosybrown;
+  cursor: pointer;
+}
+
+.bi-cart:hover {
+  transition: 30ms;
+  animation: mymove 2s;
+}
+
+@keyframes mymove {
+  50% {
+    transform: rotate(45deg);
+  }
+}
+
+.form-control {
+  background-image: linear-gradient(45deg, white, rgba(196, 182, 181));
+  border-color: rgba(196, 182, 181);
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.1rem rgb(164, 123, 123);
+}
+
+/* STOREFRONT */
+
+.page-name {
+  font-family: "Great Vibes", cursive;
+}
+
+.store-background {
+  background-color: rgba(254, 253, 251);
+}
+
+.background-color {
+  background-image: linear-gradient(
+    rgba(197, 181, 181),
+    rgba(196, 182, 181),
+    rgba(222, 212, 211),
+    white
+  ) !important;
+  margin-bottom: 5rem;
+}
+
+.image-ad-container {
+  margin: 0 !important;
+  width: 100% !important;
+  object-fit: fill !important;
+}
+
+.image-ad > img {
+  width:155%!important;
+  height:auto;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  width: 100%;
+  flex-direction: row-reverse;
+  text-transform: capitalize;
+  padding-top: 1rem;
+}
+
+.logo {
+  width: 12%;
+  height: 12%;
+}
+
+/* PRODUCT WINDOW */
+
+h2 {
+  text-decoration: underline; 
+}
+
+.page-h1 > h3 {
+  font-family: 'Playball', cursive;
+}
+
+.page-h1 {
+  text-align: center;
+  padding-bottom: 35px;
+}
+
+h1 {
+  background-color: rgba(197, 181, 181) !important;
+  font-size: 50px;
+  
+}
+
+#storeItemInfo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-wrapper {
+  height: 300px;
+  width: 250px;
+  cursor: pointer;
+  border: 1px solid rgb(177, 175, 175);
+  border-radius: 2px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.item-wrapper:hover {
+  cursor: pointer;
+  transform: scale(106%);
+  box-shadow: 2px 2px 3px grey;
+  z-index: 1;
+}
+
+.item-image {
+  width: 8em;
+  height:auto;
+}
+
+.item-article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.item-article > h3 {
+  text-align: center;
+  font-size: 0.8em;
+  overflow: hidden;
+}
+
+.thumbnail-details {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.875);
+  color: whitesmoke;
+  border-radius: 5px;
+  padding-top: 10px;
+}
+
+.buy-btn {
+  width: auto;
+  height: 30px;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: thin;
+  border-color: rgb(165, 165, 165);
+  border-radius: 5px;
+}
+
+.buy-btn:hover {
+  transition: 0.5s;
+  background-color: rgb(53, 53, 50);
+  color: whitesmoke;
+  border-color: rgb(53, 53, 50);
+}
+
+/* ITEM MODAL */
+
+.modal {
+  --bs-modal-width: 700px;
+}
+
+.modal-rating-details {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-item-description {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  padding-left: 40px;
+}
+
+.modal-item-image {
+  max-width: 40%;
+  object-fit:contain;
+}
+
+.modal-item-description > span {
+  border-left: 1px solid rgb(188, 185, 185);
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 30px;
+  padding: 20px;
+}
+
+.modal-footer {
+  justify-content: space-around;
+}
+
+.modal-footer > span {
+  background-color: rgba(255, 0, 0, 0.444);
+  border-radius: 3px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-right: 7px;
+  padding-left: 7px;
+  font-weight: 600;
+  font-size: larger;
+}
+
+.modal-buy-btn {
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: none;
+  background-color: rgb(122, 120, 120);
+  color: whitesmoke;
+}
+
+.modal-buy-btn:hover {
+  transition: 0.2s;
+  background-color: black;
+  color: whitesmoke;
+}
+
+/* CART SIDEBAR */
+
+.offcanvas,
+.offcanvas-lg,
+.offcanvas-md,
+.offcanvas-sm,
+.offcanvas-xl,
+.offcanvas-xxl {
+  --bs-offcanvas-width: 250px;
+}
+
+.cart-column ul {
+  list-style: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.cart-column li {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 30px;
+}
+
+.cart-column li > img {
+  object-fit:contain;
+}
+
+.bi-trash {
+  filter:invert();
+}
+
+.remove-btn-wrapper {
+  display:flex;
+  align-items: flex-end;
+}
+
+.remove-btn {
+  background-color: white;
+  border-style: none;
+}
+
+/* FOOTER */
+
+.footer-settings {
+  background-color: white;
+  width: 100% !important;
+}
+
+.footer-settings > .py-3 {
+  padding-top: 1rem !important;
+  padding-bottom: 0rem !important;
+}
+
+.footer-settings > .my-4 {
+  margin-bottom: 0.5rem !important;
+}
+
+main {
+  margin-bottom: 5rem;
+}
